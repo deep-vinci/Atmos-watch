@@ -55,6 +55,7 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 .sidebar-nav ul {
@@ -78,6 +79,13 @@ ul {
     margin-top: var(--nav-gap);
     background-color: transparent;
 }
+.sidebar-nav ul li:last-child {
+    margin-top: var(--nav-gap);
+    background-color: transparent;
+    margin-top: auto;
+    margin-bottom: var(--nav-gap);
+
+}
 
 .sidebar-nav ul li:hover {
     background-color: var(--nav-bg);
@@ -88,7 +96,6 @@ ul {
     width: calc(100% - calc(var(--nav-width) + calc(var(--nav-margin) * 3)));
     height: calc(100% - calc(var(--content-margin) * 2));
     border-radius: var(--content-border-radius);
-
 }
 
 main {
