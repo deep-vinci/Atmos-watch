@@ -1,0 +1,96 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* color palette */
+    --page-bg: #e6ecec;
+    --page-main-container-bg: #1e1f24;
+    --nav-bg: #2e2e38;
+    
+    /* page main container */
+    --main-container-margin: 150px;
+    --main-container-border-radius: 50px;
+
+    /* side nav */
+    --nav-width: 90px;
+    --nav-margin: 20px;
+    --nav-gap: 10px;
+    --nav-border-radius: calc(var(--main-container-border-radius) - var(--nav-margin));
+    --nav-li-border-radius: calc(var(--nav-border-radius) - var(--nav-gap));
+
+    /* content */
+    --content-margin: 20px;
+    --content-border-radius: calc(var(--main-container-border-radius) - var(--nav-margin));
+    margin:0;
+}
+
+.page {
+    background-color: var(--page-bg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-main-container {
+    width: calc(100% - var(--main-container-margin));
+    height: calc(100% - var(--main-container-margin));
+    background-color: var(--page-main-container-bg);
+    border-radius: var(--main-container-border-radius);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav {
+    color: white;
+    width: var(--nav-width);
+    height: calc(100% - calc(var(--nav-margin) * 2));
+    background-color: var(--nav-bg);
+    border-radius: var(--nav-border-radius);
+    margin: var(--nav-margin);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--nav-gap);;
+}
+
+.sidebar-nav ul li {
+    height: calc(90px - 20px);
+    width: calc(90px - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--page-main-container-bg);
+    border-radius: var(--nav-li-border-radius);
+}
+
+.sidebar-nav ul li:first-child {
+    margin-top: var(--nav-gap);
+    background-color: transparent;
+}
+
+.sidebar-nav ul li:hover {
+    background-color: var(--nav-bg);
+    transition: background-color 0.2s;
+}
+
+.content {
+    width: calc(100% - calc(var(--nav-width) + calc(var(--nav-margin) * 3)));
+    height: calc(100% - calc(var(--content-margin) * 2));
+    border-radius: var(--content-border-radius);
+
+}
+
+main {
+    
+}

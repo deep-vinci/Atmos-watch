@@ -1,11 +1,12 @@
 {
-  "name": "webpack-basic-template",
+  "name": "Atmos-watch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
