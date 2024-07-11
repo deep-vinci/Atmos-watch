@@ -93,6 +93,7 @@ ul {
 }
 
 .content {
+    background-color: var(--nav-bg);
     width: calc(100% - calc(var(--nav-width) + calc(var(--nav-margin) * 3)));
     height: calc(100% - calc(var(--content-margin) * 2));
     border-radius: var(--content-border-radius);
